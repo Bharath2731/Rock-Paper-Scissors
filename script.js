@@ -141,7 +141,8 @@ function compareChoices(userChoice,userDiv) {
         Object.assign(youPicked.style, winnerStyle);
         youPicked.appendChild(yourclone);
         youPicked.style.boxShadow='0 0 0 9vh #2E9A2563,0 0 0 6vh #2E9A2563,0 0 0 3vh #2E9A2563'
-        yourScore=parseInt(localStorage.getItem('yourScore'))+1
+        yourScore=isNaN(yourScore) ? 0 :yourScore;
+        yourScore=parseInt(yourScore)+1
         localStorage.setItem('yourScore',yourScore)
         yScore.innerHTML=yourScore
 
@@ -159,7 +160,8 @@ function compareChoices(userChoice,userDiv) {
         Object.assign(youPicked.style, winnerStyle);
         youPicked.appendChild(yourclone);
         pcPicked.style.boxShadow='0 0 0 9vh #2E9A2563,0 0 0 6vh #2E9A2563,0 0 0 3vh #2E9A2563'
-        computerScore=parseInt(localStorage.getItem('computerScore'))+1
+
+        computerScore=parseInt(computerScore)+1
         localStorage.setItem('computerScore',computerScore)
         cScore.innerHTML=computerScore
     }
