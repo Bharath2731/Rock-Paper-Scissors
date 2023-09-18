@@ -21,8 +21,10 @@ const winnerPage=document.querySelector('.winnerPage');
 var youPicked=document.querySelector('.youPicked');
 var pcPicked=document.querySelector('.pcPicked');
 
-let computerScore = parseInt(localStorage.getItem('computerScore')) || 0;
-let yourScore = parseInt(localStorage.getItem('yourScore')) || 0;
+let computerScore = parseInt(localStorage.getItem('computerScore'));
+computerScore = isNaN(computerScore) ? 0 : computerScore;
+let yourScore = parseInt(localStorage.getItem('yourScore'));
+yourScore=isNaN(yourScore) ? 0 :yourScore;
 
 cScore.innerHTML=computerScore
 yScore.innerHTML=yourScore
