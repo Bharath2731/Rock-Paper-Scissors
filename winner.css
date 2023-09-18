@@ -1,0 +1,84 @@
+.winnerPage{
+    display: none;
+}
+.trophyBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+}
+.trophyBoxInner{
+    position: relative;
+    margin-top: 10vh;
+    width: 25vw;
+    height: 25vh;
+}
+.pics{
+    position: absolute;
+    top: 200%;
+}
+.trophy{
+    top: 50%;
+    right: 25%;
+}
+.star1{
+    top: 75%;
+    right: -15%;
+}
+.star4TopLeft{
+    top:-10%;
+    left: 15%;
+}
+.star4TopMiddle{
+    top:3%;
+    left: 40%;
+}
+.star4TopRight{
+    top:45%;
+    left:100%;
+}
+.star4bottom{
+    top: 140%;
+    left: 7%;
+}
+.star2Left{
+    top: 60%;
+    left: -18%;
+}
+.star2Right{
+    top: -3%;
+    left: 70%;
+}
+.star3{
+    top: 23%;
+}
+.space{
+    min-height: 15vh;
+}
+.hurray{
+    text-align: center;
+    font-size: 9vh;
+    letter-spacing: 5px;
+    margin-bottom: 0%;
+    color: white;
+}
+.youWonMessage{
+    text-align: center;
+    font-size: 4vh;
+    margin-top: 0;
+    letter-spacing: 3px;
+    color: white;
+}
+.again{
+    border: solid white;
+    padding: 7px 25px;
+    border-radius: 10px;
+    color: gray;
+    background-color: #FFF;
+    letter-spacing: 3px;
+}
+.againWinnerPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
